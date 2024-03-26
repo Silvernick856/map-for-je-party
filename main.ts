@@ -2040,12 +2040,44 @@ turn = randint(1, player_count)
 game.onUpdate(function () {
     if (space_player_1 <= 3 && space_player_1 >= 1) {
         tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(1 + 3 * space_player_1, 8))
-    } else if (space_player_1 <= 7 && space_player_1 >= 4) {
+    } else if (space_player_1 <= 6 && space_player_1 >= 4) {
         tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(10, 8 + 3 * (space_player_1 - 3)))
-    } else if (space_player_1 <= 9 && space_player_1 >= 8) {
-        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(10 + 3 * (space_player_1 - 8), 17))
-    } else if (space_player_1 <= 7 && space_player_1 >= 10) {
-        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(16, 8 + 3 * (space_player_1 - 10)))
+    } else if (space_player_1 <= 8 && space_player_1 >= 7) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(10 + 3 * (space_player_1 - 6), 17))
+    } else if (space_player_1 <= 12 && space_player_1 >= 9) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(16, 17 - 3 * (space_player_1 - 8)))
+    } else if (space_player_1 <= 14 && space_player_1 >= 13) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(16 + 3 * (space_player_1 - 12), 5))
+    } else if (space_player_1 <= 17 && space_player_1 >= 15) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(22, 5 + 3 * (space_player_1 - 14)))
+    } else if (space_player_1 <= 19 && space_player_1 >= 18) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(22 + 3 * (space_player_1 - 17), 14))
+    } else if (space_player_1 <= 23 && space_player_1 >= 20) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(28, 14 - 3 * (space_player_1 - 19)))
+    } else if (space_player_1 <= 25 && space_player_1 >= 24) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(28 + 3 * (space_player_1 - 23), 2))
+    } else if (space_player_1 <= 26 && space_player_1 >= 26) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(34, 2 + 3 * (space_player_1 - 25)))
+    } else if (space_player_1 <= 28 && space_player_1 >= 27) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(34 + 3 * (space_player_1 - 26), 5))
+    } else if (space_player_1 <= 31 && space_player_1 >= 29) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(40, 5 + 3 * (space_player_1 - 28)))
+    } else if (space_player_1 <= 32 && space_player_1 >= 32) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(40 + 3 * (space_player_1 - 31), 14))
+    } else if (space_player_1 <= 33 && space_player_1 >= 33) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(43, 14 + 3 * (space_player_1 - 32)))
+    } else if (space_player_1 <= 35 && space_player_1 >= 34) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(43 + 3 * (space_player_1 - 33), 17))
+    } else if (space_player_1 <= 37 && space_player_1 >= 36) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(49, 17 + 3 * (space_player_1 - 35)))
+    } else if (space_player_1 <= 39 && space_player_1 >= 38) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(49 + 3 * (space_player_1 - 37), 11))
+    } else if (space_player_1 <= 40 && space_player_1 >= 40) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(46, 11 + 3 * (space_player_1 - 39)))
+    } else if (space_player_1 <= 40 && space_player_1 >= 41) {
+        tiles.placeOnTile(mp.getPlayerSprite(mp.playerSelector(mp.PlayerNumber.One)), tiles.getTileLocation(49 + 3 * (space_player_1 - 40), 11))
+    } else if (false) {
+    	
     }
 })
 forever(function () {
